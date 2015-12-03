@@ -1,0 +1,1 @@
+0 = [] execVM "scripts\loadout\setLoadout.sqf";
