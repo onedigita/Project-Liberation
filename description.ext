@@ -13,8 +13,7 @@ onLoadName = CO_87[BC]Liberation;
 joinUnassigned = 0;
 disableChannels[]={0,2,3,4,5,6};
 
-class Header
-{
+class Header {
 	gameType = CTI;
 	minPlayers = 1;
 	maxPlayers = 41;
@@ -23,10 +22,9 @@ class Header
 #include "ui\liberation_interface.hpp"
 #include "ui\liberation_notifications.hpp"
 #include "ui\mission_params.hpp"
-class CfgDebriefing
-{
-	class End1
-	{
+
+class CfgDebriefing {
+	class End1 {
 		title =	$STR_SORRY;
 		subtitle = "";
 		description = $STR_COMMANDER_NOT_AUTHORIZED;
@@ -36,7 +34,6 @@ class CfgDebriefing
 
 #include "taw_vd\GUI.h"
 
-class CfgFunctions
-{
+class CfgFunctions {
 	#include "taw_vd\CfgFunctions.hpp"
 };
