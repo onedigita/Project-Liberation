@@ -1,1 +1,1 @@
-0 = [] execVM "scripts\loadout\setLoadout.sqf";
+[] execVM "scripts\loadout\setLoadout.sqf";

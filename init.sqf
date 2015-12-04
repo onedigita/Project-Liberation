@@ -13,7 +13,7 @@ if ( GRLIB_revive > 0 ) then {
 };
 [] execVM "GREUH\scripts\GREUH_activate.sqf";
 
-[] call compileFinal preprocessfilelinenumbers "scripts\shared\init_shared.sqf";
+[] call compileFinal preprocessFileLineNUmbers "scripts\shared\init_shared.sqf";
 
 if (isServer) then {
 	[] call compileFinal preprocessFileLineNumbers "scripts\server\init_server.sqf";
