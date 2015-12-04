@@ -1,15 +1,14 @@
-params [ "_mindist", "_maxdist", "_try_nearest", ["_spawn_target", ""] ];
-private [ "_increment", "_opfor_spawn_point", "_all_possible_sectors", "_filtered_possible_sectors", "_current_sector", "_accept_current_sector", "_current_sector_distance", "_nearest_possible_sectors" ];
+params ["_mindist","_maxdist","_try_nearest",["_spawn_target",""]];
 
-_increment = 500;
-_opfor_spawn_point = '';
-_all_possible_sectors = sectors_opfor;
-_filtered_possible_sectors = [];
+private _increment = 500;
+private _opfor_spawn_point = '';
+private _all_possible_sectors = sectors_opfor;
+private _filtered_possible_sectors = [];
 
 {
-	_current_sector = _x;
-	_accept_current_sector = true;
-	_current_sector_distance = 99999;
+	private _current_sector = _x;
+	private _accept_current_sector = true;
+	private _current_sector_distance = 99999;
 
 	if ( !isNil 'secondary_objective_position' ) then {
 		if ( count secondary_objective_position != 0 ) then {
@@ -66,7 +65,7 @@ _filtered_possible_sectors = [];
 
 if ( count _filtered_possible_sectors != 0 ) then {
 
-	_nearest_possible_sectors = [];
+	private _nearest_possible_sectors = [];
 
 	if ( _try_nearest ) then {
 		_maxsearchdist = _mindist + _increment;
