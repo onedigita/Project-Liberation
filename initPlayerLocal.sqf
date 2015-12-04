@@ -1,12 +1,14 @@
 [] execVM "scripts\loadout\setLoadout.sqf";
-player setspeaker "NoVoice";
+enableSentences false;
+player disableConversation true;
+player setSpeaker "NoVoice";
 showSubtitles false;
 enableSentences false;
 enableRadio false;
 player disableConversation true;
 
-if(player == P4) then {
-		null = [P4, 700, true, -1] execVM "scripts\client\CAS\addAction.sqf";} else {};
+if(player == CAS1) then {
+		null = [CAS1, 700, true, -1] execVM "scripts\client\CAS\addAction.sqf";} else {};
 	
 
 if ( isNil "GRLIB_respawn_loadout" ) then {

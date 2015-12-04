@@ -11,7 +11,7 @@
 #define CT_STATIC_SKEW		10
 #define CT_ACTIVETEXT		11
 #define CT_TREE			12
-#define CT_STRUCTURED_TEXT	13
+#define CT_STRUCTURED_TEXT	13 
 #define CT_3DSTATIC		20
 #define CT_3DACTIVETEXT		21
 #define CT_3DLISTBOX		22
@@ -62,7 +62,7 @@ class JWC_Text
 {
 	type = CT_STATIC;
 	idc = -1;
-    style = ST_CENTER;
+        style = ST_CENTER;
 	colorBackground[] = {0, 0, 0, 0};
 	colorText[] = {1, 1, 1, 1};
 	font = FontM;
@@ -74,7 +74,7 @@ class JWC_StructuredText
 {
 	type = CT_STRUCTURED_TEXT;
 	idc = -1;
-    style = ST_CENTER;
+        style = ST_CENTER;
 	colorBackground[] = {0, 0, 0, 0};
 	colorText[] = {1, 1, 1, 1};
 	font = FontM;
@@ -86,7 +86,7 @@ class JWC_BG: JWC_Text
 {
 	type = CT_STATIC;
 	idc = -1;
-    style = ST_LEFT;
+        style = ST_LEFT;
 	colorBackground[] = {0.02, 0.11, 0.27, 0.7};
 	colorText[] = {1, 1, 1, 0};
 	font = FontM;
@@ -123,7 +123,7 @@ class JWC_Map
 	alphaFadeStartScale = 0.350000;
 	alphaFadeEndScale = 0.400000;
 	colorBackground[]  = {0.969000, 0.957000, 0.949000, 1.000000};
-    colorText[] = {0, 0, 0, 1};
+        colorText[] = {0, 0, 0, 1};
 	colorSea[]  = {0.467000, 0.631000, 0.851000, 0.500000};
 	colorForest[]  = {0.624000, 0.780000, 0.388000, 0.500000};
 	colorForestBorder[]  = {0.000000, 0.000000, 0.000000, 0.000000};
@@ -147,8 +147,8 @@ class JWC_Map
 	colorMainRoadsFill[]  = {1.000000, 0.600000, 0.400000, 1.000000};
 	colorGrid[]  = {0.100000, 0.100000, 0.100000, 0.600000};
 	colorGridMap[]  = {0.100000, 0.100000, 0.100000, 0.600000};
-    font = "TahomaB";
-    sizeEx = 0.04;
+        font = "TahomaB";
+        sizeEx = 0.04;
 	fontLabel = "PuristaMedium";
 	sizeExLabel = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
 	fontGrid = "TahomaB";
@@ -163,7 +163,7 @@ class JWC_Map
 	sizeExLevel = 0.020000;
 	text = "#(argb,8,8,3)color(1,1,1,1)";
 	class Legend
-    {
+        {
 		x = "SafeZoneX + (((safezoneW / safezoneH) min 1.2) / 40)";
 		y = "SafeZoneY + safezoneH - 4.5 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 		w = "10 * (((safezoneW / safezoneH) min 1.2) / 40)";
@@ -191,25 +191,25 @@ class JWC_Map
 		coefMax = 1;
 	};
 	class Waypoint
-    {
+        {
 		icon = "\A3\ui_f\data\map\mapcontrol\waypoint_ca.paa";
 		color[]  = {0, 0, 0, 1};
-        size = 20;
+                size = 20;
 		coefMin = 0.9;
 		coefMax = 4;
 		importance = "1.2 * 16 * 0.05";
 	};
 	class WaypointCompleted
-    {
+        {
 		icon = "\A3\ui_f\data\map\mapcontrol\waypointCompleted_ca.paa";
 		color[]  = {0, 0, 0, 1};
-        size = 20;
+                size = 20;
 		coefMin = 0.9;
 		coefMax = 4;
 		importance = "1.2 * 16 * 0.05";
 	};
 	class ActiveMarker
-    {
+        {
 		icon = "\ca\ui\data\map_waypoint_completed_ca.paa";
 		size = 20;
 		color[] = {0, 0.9, 0, 1};
@@ -218,7 +218,7 @@ class JWC_Map
 		coefMax = 4;
 	};
 	class CustomMark
-    {
+        {
 		icon = "\A3\ui_f\data\map\mapcontrol\custommark_ca.paa";
 		size = 24;
 		importance = 1;
@@ -227,7 +227,7 @@ class JWC_Map
 		color[]  = {0, 0, 0, 1};
 	};
 	class Command
-    {
+        {
 		icon = "\A3\ui_f\data\map\mapcontrol\waypoint_ca.paa";
 		size = 18;
 		importance = 1;
@@ -236,7 +236,7 @@ class JWC_Map
 		color[]  = {1, 1, 1, 1};
 	};
 	class Bush
-    {
+        {
 		icon = "\A3\ui_f\data\map\mapcontrol\bush_ca.paa";
 		color[]  = {0.450000, 0.640000, 0.330000, 0.400000};
 		size = "14/2";
@@ -245,7 +245,7 @@ class JWC_Map
 		coefMax = 4;
 	};
 	class Rock
-    {
+        {
 		icon = "\A3\ui_f\data\map\mapcontrol\rock_ca.paa";
 		color[]  = {0.100000, 0.100000, 0.100000, 0.800000};
 		size = 12;
@@ -254,7 +254,7 @@ class JWC_Map
 		coefMax = 4;
 	};
 	class SmallTree
-    {
+        {
 		icon = "\A3\ui_f\data\map\mapcontrol\bush_ca.paa";
 		color[]  = {0.450000, 0.640000, 0.330000, 0.400000};
 		size = 12;
@@ -263,7 +263,7 @@ class JWC_Map
 		coefMax = 4;
 	};
 	class Tree
-    {
+        {
 		icon = "\A3\ui_f\data\map\mapcontrol\bush_ca.paa";
 		color[]  = {0.450000, 0.640000, 0.330000, 0.400000};
 		size = 12;
@@ -272,7 +272,7 @@ class JWC_Map
 		coefMax = 4;
 	};
 	class busstop
-    {
+        {
 		icon = "\A3\ui_f\data\map\mapcontrol\busstop_CA.paa";
 		size = 24;
 		importance = 1;
@@ -281,7 +281,7 @@ class JWC_Map
 		color[]  = {1, 1, 1, 1};
 	};
 	class fuelstation
-    {
+        {
 		icon = "\A3\ui_f\data\map\mapcontrol\fuelstation_CA.paa";
 		size = 24;
 		importance = 1;
@@ -290,7 +290,7 @@ class JWC_Map
 		color[]  = {1, 1, 1, 1};
 	};
 	class hospital
-    {
+        {
 		icon = "\A3\ui_f\data\map\mapcontrol\hospital_CA.paa";
 		size = 24;
 		importance = 1;
@@ -299,7 +299,7 @@ class JWC_Map
 		color[]  = {1, 1, 1, 1};
 	};
 	class church
-    {
+        {
 		icon = "\A3\ui_f\data\map\mapcontrol\church_CA.paa";
 		size = 24;
 		importance = 1;
@@ -308,7 +308,7 @@ class JWC_Map
 		color[]  = {1, 1, 1, 1};
 	};
 	class lighthouse
-    {
+        {
 		icon = "\A3\ui_f\data\map\mapcontrol\lighthouse_CA.paa";
 		size = 24;
 		importance = 1;
@@ -317,7 +317,7 @@ class JWC_Map
 		color[]  = {1, 1, 1, 1};
 	};
 	class power
-    {
+        {
 		icon = "\A3\ui_f\data\map\mapcontrol\power_CA.paa";
 		size = 24;
 		importance = 1;
@@ -326,7 +326,7 @@ class JWC_Map
 		color[]  = {1, 1, 1, 1};
 	};
 	class powersolar
-    {
+        {
 		icon = "\A3\ui_f\data\map\mapcontrol\powersolar_CA.paa";
 		size = 24;
 		importance = 1;
@@ -335,7 +335,7 @@ class JWC_Map
 		color[]  = {1, 1, 1, 1};
 	};
 	class powerwave
-    {
+        {
 		icon = "\A3\ui_f\data\map\mapcontrol\powerwave_CA.paa";
 		size = 24;
 		importance = 1;
@@ -344,7 +344,7 @@ class JWC_Map
 		color[]  = {1, 1, 1, 1};
 	};
 	class powerwind
-    {
+        {
 		icon = "\A3\ui_f\data\map\mapcontrol\powerwind_CA.paa";
 		size = 24;
 		importance = 1;
@@ -353,7 +353,7 @@ class JWC_Map
 		color[]  = {1, 1, 1, 1};
 	};
 	class quay
-    {
+        {
 		icon = "\A3\ui_f\data\map\mapcontrol\quay_CA.paa";
 		size = 24;
 		importance = 1;
@@ -362,7 +362,7 @@ class JWC_Map
 		color[]  = {1, 1, 1, 1};
 	};
 	class shipwreck
-    {
+        {
 		icon = "\A3\ui_f\data\map\mapcontrol\shipwreck_CA.paa";
 		size = 24;
 		importance = 1;
@@ -371,7 +371,7 @@ class JWC_Map
 		color[]  = {1, 1, 1, 1};
 	};
 	class transmitter
-    {
+        {
 		icon = "\A3\ui_f\data\map\mapcontrol\transmitter_CA.paa";
 		size = 24;
 		importance = 1;
@@ -380,7 +380,7 @@ class JWC_Map
 		color[]  = {1, 1, 1, 1};
 	};
 	class watertower
-    {
+        {
 		icon = "\A3\ui_f\data\map\mapcontrol\watertower_CA.paa";
 		size = 24;
 		importance = 1;
@@ -389,7 +389,7 @@ class JWC_Map
 		color[]  = {1, 1, 1, 1};
 	};
 	class Cross
-    {
+        {
 		icon = "\A3\ui_f\data\map\mapcontrol\Cross_CA.paa";
 		size = 24;
 		importance = 1;
@@ -398,7 +398,7 @@ class JWC_Map
 		color[]  = {0, 0, 0, 1};
 	};
 	class Chapel
-    {
+        {
 		icon = "\A3\ui_f\data\map\mapcontrol\Chapel_CA.paa";
 		size = 24;
 		importance = 1;
@@ -407,7 +407,7 @@ class JWC_Map
 		color[]  = {0, 0, 0, 1};
 	};
 	class Bunker
-    {
+        {
 		icon = "\A3\ui_f\data\map\mapcontrol\bunker_ca.paa";
 		size = 14;
 		importance = "1.5 * 14 * 0.05";
@@ -416,7 +416,7 @@ class JWC_Map
 		color[]  = {0, 0, 0, 1};
 	};
 	class Fortress
-    {
+        {
 		icon = "\A3\ui_f\data\map\mapcontrol\bunker_ca.paa";
 		size = 16;
 		importance = "2 * 16 * 0.05";
@@ -425,7 +425,7 @@ class JWC_Map
 		color[]  = {0, 0, 0, 1};
 	};
 	class Fountain
-    {
+        {
 		icon = "\A3\ui_f\data\map\mapcontrol\fountain_ca.paa";
 		size = 11;
 		importance = "1 * 12 * 0.05";
@@ -434,7 +434,7 @@ class JWC_Map
 		color[]  = {0, 0, 0, 1};
 	};
 	class Ruin
-    {
+        {
 		icon = "\A3\ui_f\data\map\mapcontrol\ruin_ca.paa";
 		size = 16;
 		importance = "1.2 * 16 * 0.05";
@@ -443,7 +443,7 @@ class JWC_Map
 		color[]  = {0, 0, 0, 1};
 	};
 	class Stack
-    {
+        {
 		icon = "\A3\ui_f\data\map\mapcontrol\stack_ca.paa";
 		size = 20;
 		importance = "2 * 16 * 0.05";
@@ -452,8 +452,8 @@ class JWC_Map
 		color[]  = {0, 0, 0, 1};
 	};
 	class Tourism
-    {
-	    icon = "\A3\ui_f\data\map\mapcontrol\tourism_ca.paa";
+        {
+		icon = "\A3\ui_f\data\map\mapcontrol\tourism_ca.paa";
 		size = 16;
 		importance = "1 * 16 * 0.05";
 		coefMin = 0.700000;
@@ -461,7 +461,7 @@ class JWC_Map
 		color[]  = {0, 0, 0, 1};
 	};
 	class ViewTower
-    {
+        {
 		icon = "\A3\ui_f\data\map\mapcontrol\viewtower_ca.paa";
 		size = 16;
 		importance = "2.5 * 16 * 0.05";
@@ -489,27 +489,25 @@ class JWC_Button
 	colorBackground[] = {0,0,0,0.6};
 	colorbackground2[] = {0,0,0,0.6};
 	colorDisabled[] = {0.85, 0.85, 0.85,0.4};
-        colorFocused[] = {0.8, 0.8, 0, 0.80};
-        colorbackgroundFocused[] = {0,0,0,0.6};
 	periodFocus = 1.2;
 	periodOver = 0.2;
-	class HitZone
+	class HitZone 
 	{
 		left = 0.004;
 		top = 0.029;
 		right = 0.004;
 		bottom = 0.029;
 	};
-
-	class ShortcutPos
+		
+	class ShortcutPos 
 	{
 		left = 0.0145;
 		top = 0.026;
 		w = 0.0392157;
 		h = 0.0522876;
 	};
-
-	class TextPos
+		
+	class TextPos 
 	{
 		left = 0.03;
 		top = 0.026;
@@ -517,31 +515,31 @@ class JWC_Button
 		bottom = 0.005;
 	};
 	textureNoShortcut = "";
-    animTextureNormal   = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButtonMain\normal_ca.paa";
-    animTextureDisabled = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButtonMain\disabled_ca.paa";
-    animTextureOver     = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButtonMain\over_ca.paa";
-    animTextureFocused  = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButtonMain\focus_ca.paa";
-    animTexturePressed  = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButtonMain\down_ca.paa";
-    animTextureDefault  = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButtonMain\normal_ca.paa";
+        animTextureNormal   = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButtonMain\normal_ca.paa";
+        animTextureDisabled = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButtonMain\disabled_ca.paa";
+        animTextureOver     = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButtonMain\over_ca.paa";
+        animTextureFocused  = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButtonMain\focus_ca.paa";
+        animTexturePressed  = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButtonMain\down_ca.paa";
+        animTextureDefault  = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButtonMain\normal_ca.paa";
 	period = 0;
 	font = "PuristaSemibold";
 	soundEnter[] = {"\A3\ui_f\data\sound\onover", 0.090000, 1};
 	soundPush[] = {"\A3\ui_f\data\sound\new1", 0.000000, 0};
 	soundClick[] = {"\A3\ui_f\data\sound\onclick", 0.070000, 1};
 	soundEscape[] = {"\A3\ui_f\data\sound\onescape", 0.090000, 1};
-	class Attributes
+	class Attributes 
 	{
 		font = "PuristaSemibold";
 		color = "#E5E5E5";
 		align = "left";
 		shadow = "true";
 	};
-	class AttributesImage
+	class AttributesImage 
 	{
-		font = "PuristaSemibold";
-		color = "#E5E5E5";
-		align = "left";
-		shadow = "true";
+			font = "PuristaSemibold";
+			color = "#E5E5E5";
+			align = "left";
+			shadow = "true";
 	};
 };
 
@@ -551,10 +549,10 @@ class JWC_CheckBox
 	idc = -1;
 	type = 7;
 	style = 0;
-    x = 0.550;
-    y = 0.18;
-    w = 0.15;
-    h = 0.15;
+        x = 0.550;
+        y = 0.18;
+        w = 0.15;
+        h = 0.15;
 	colorText[] = {1, 0, 0, 1};
 	color[] = {0, 0, 0, 0};
 	colorBackground[] = {0, 0, 1, 1};
@@ -570,4 +568,3 @@ class JWC_CheckBox
 	strings[] = {""};
 	checked_strings[] = {""};
 };
-

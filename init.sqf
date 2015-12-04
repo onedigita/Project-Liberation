@@ -1,5 +1,5 @@
 enableSaving [ false, false ];
-
+null=[] execVM "scripts\client\CAS\initCAS.sqf";
 [] call compileFinal preprocessFileLineNumbers "scripts\shared\atlas_manager.sqf";
 [] call compileFinal preprocessFileLineNUmbers "scripts\shared\liberation_functions.sqf";
 [] call compileFinal preprocessFileLineNUmbers "scripts\shared\init_sectors.sqf";
