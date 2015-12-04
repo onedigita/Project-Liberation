@@ -1,5 +1,5 @@
 enableSaving [ false, false ];
-
+null=[] execVM "scripts\client\CAS\initCAS.sqf";
 [] call compileFinal preprocessFileLineNumbers "scripts\shared\atlas_manager.sqf";
 [] call compileFinal preprocessFileLineNUmbers "scripts\shared\liberation_functions.sqf";
 [] call compileFinal preprocessFileLineNUmbers "scripts\shared\init_sectors.sqf";
@@ -13,7 +13,7 @@ if ( GRLIB_revive > 0 ) then {
 };
 [] execVM "GREUH\scripts\GREUH_activate.sqf";
 
-[] call compileFinal preprocessFileLineNUmbers "scripts\shared\init_shared.sqf";
+[] call compileFinal preprocessfilelinenumbers "scripts\shared\init_shared.sqf";
 
 if (isServer) then {
 	[] call compileFinal preprocessFileLineNumbers "scripts\server\init_server.sqf";
@@ -30,4 +30,4 @@ if (!isDedicated && hasInterface) then {
 	setViewDistance 1600;
 };
 
-_igiload = execVM "scripts\server\IgiLoad\IgiLoadInit.sqf";
+null=[] execVM "scripts\client\CAS\initCAS.sqf";

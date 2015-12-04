@@ -105,4 +105,24 @@ class CfgNotifications
 		color[] = {1,1,0,1};
 		sound = "taskCanceled";
     };
+	class cantDo
+	{
+		name="cantDo";
+		sound[]={"CAS\cantDo.ogg",1.0,1.0};
+		titles[]={};
+	};
+
+	class fire
+	{
+		name="fire";
+		sound[]={"CAS\fire.ogg",db+12,1.0};
+		titles[]={};
+	};
+
+	class pain
+	{
+		name="pain";
+		sound[]={"CAS\pain.ogg",1.0,1.0};
+		titles[]={};
+	};
 };

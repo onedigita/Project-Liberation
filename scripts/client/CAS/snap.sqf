@@ -4,13 +4,13 @@ switch (_this select 1) do
 {
   case 30 : // pressed A
   {
-    if (JWC_doSnap) then
+    if (doSnap) then
     {
-      JWC_doSnap = false;
+      doSnap = false;
     }
     else
     {
-      JWC_doSnap = true;
+      doSnap = true;
     };
   };
   case 1 : // pressed Esc

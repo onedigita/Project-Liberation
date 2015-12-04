@@ -6,25 +6,31 @@ enableDebugConsole = 1;
 allowFunctionsLog = 0;
 
 loadScreen="res\liberation.jpg";
-onLoadMission = Edited By [BC]Skillet981 , [BC]Nuerofreak;
+onLoadMission = $STR_MISSION_TITLE;
 author = "[GREUH] Zbug, [GREUH] McKeewa";
-onLoadName = CO_87[BC]Liberation;
+onLoadName = $STR_MISSION_TITLE;
 
 joinUnassigned = 0;
-disableChannels[]={0,2,3,4,5,6};
 
-class Header {
+class Header
+{
 	gameType = CTI;
 	minPlayers = 1;
 	maxPlayers = 41;
 };
+
 #include "GREUH\UI\GREUH_interface.hpp"
 #include "ui\liberation_interface.hpp"
 #include "ui\liberation_notifications.hpp"
 #include "ui\mission_params.hpp"
+#include "Scripts\server\tickets\script_params.hpp" //Ends with paramsArray[4]
+#include "scripts\client\CAS\casDefine.hpp"
+#include "scripts\client\CAS\casMenu.hpp"
 
-class CfgDebriefing {
-	class End1 {
+class CfgDebriefing
+{
+	class End1
+	{
 		title =	$STR_SORRY;
 		subtitle = "";
 		description = $STR_COMMANDER_NOT_AUTHORIZED;
@@ -32,8 +38,3 @@ class CfgDebriefing {
 	};
 };
 
-#include "taw_vd\GUI.h"
-
-class CfgFunctions {
-	#include "taw_vd\CfgFunctions.hpp"
-};

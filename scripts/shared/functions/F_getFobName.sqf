@@ -1,9 +1,8 @@
-params [ "_fob" ];
-private [ "_fobindex", "_currentidx", "_fobname" ];
+params ["_fob"];
 
-_fobname = "";
-_fobindex = -1;
-_currentidx = 0;
+private _fobname = "";
+private _fobindex = -1;
+private _currentidx = 0;
 {
 	if ( _x distance _fob < 100 ) then {
 		_fobindex = _currentidx;

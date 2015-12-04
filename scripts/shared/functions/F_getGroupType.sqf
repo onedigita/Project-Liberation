@@ -1,12 +1,11 @@
 params [ "_grp" ];
-private [ "_grouptype", "_vehicletype" ];
 
-_grouptype = 'infantry';
-_vehicletype = '';
+private _grouptype = 'infantry';
+private _vehicletype = '';
 {
 	if ( vehicle _x != _x && _vehicletype == '' ) then {
 		if ( ((gunner vehicle _x) == _x) || ((driver  vehicle _x) == _x) || ((commander vehicle _x) == _x) ) then {
-			_vehicletype = typeof vehicle _x;
+			_vehicletype = typeOf vehicle _x;
 		};
 	};
 } foreach units _grp;
