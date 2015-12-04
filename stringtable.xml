@@ -1,9 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
         <Project name="Liberation">
                 <Package name="Liberation">
-                </Key>
+        	<Key ID="STR_MISSION_TITLE">
+        		<Original>Liberation 0.915a</Original>
+        	</Key>
                 <Key ID="STR_MISSION_VERSION">
-                        <Original>v0.914</Original>
+                        <Original>v0.915a</Original>
                 </Key>
                 <Key ID="STR_MISSION_DESCRIPTION">
                         <Original>With the power of Freedom and Democracy you shall liberate Altis from the CSAT oppression.</Original>
@@ -1291,7 +1293,11 @@
                         <Original>Successful loadout transfer from %1.</Original>
                         <French>Transfer d'équipement réussi depuis %1.</French>
                         <German>Erfolgreich Ausrüstung von %1 übertragen.</German>
-             
+                </Key>
+                <Key ID="STR_LOADOUT">
+                        <Original>Loadout:</Original>
+                        <French>Equipement :</French>
+                        <German>Ausrüstung:</German>
                 </Key>
                 <Key ID="STR_SPAWN_POINT">
                         <Original>Deployment location:</Original>
@@ -1341,6 +1347,22 @@
                 <Key ID="STR_SHORTER_NIGHTS_PARAM">
                         <Original>Shorter nights</Original>
                         <French>Nuits plus courtes</French>
+                </Key>
+                <Key ID="STR_REPAIRING">
+                        <Original>Repairing</Original>
+                        <French>Réparation</French>
+                </Key>
+                <Key ID="STR_REARMING">
+                        <Original>Rearming in %1s</Original>
+                        <French>Réarmement dans %1s</French>
+                </Key>
+                <Key ID="STR_REFUELING">
+                        <Original>Refueling</Original>
+                        <French>Ravitaillement</French>
+                </Key>
+                <Key ID="STR_INTEL">
+                        <Original>-- TAKE INTEL</Original>
+                        <French>-- PRENDRE INTEL</French>
                 </Key>
 
 

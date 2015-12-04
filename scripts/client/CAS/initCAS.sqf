@@ -3,4 +3,4 @@ abortCAS   = true;
 waitCAS    = false;
 doSnap     = false;
 firstRun   = false;
-onKeyPress = compile preprocessFile "common\client\CAS\snap.sqf";
+onKeyPress = compile preprocessFile "scripts\client\CAS\snap.sqf";

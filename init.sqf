@@ -30,4 +30,4 @@ if (!isDedicated && hasInterface) then {
 	setViewDistance 1600;
 };
 
-_igiload = execVM "scripts\server\IgiLoad\IgiLoadInit.sqf";
+null=[] execVM "scripts\client\CAS\initCAS.sqf";

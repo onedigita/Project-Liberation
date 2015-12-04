@@ -155,5 +155,5 @@ if !(casRequest) then
 }
 else
 {
-  [_owner, maxDisReq, _lockToOwner, _num, casType,"CAS_TARGET",_id] execVM "common\client\CAS\CAS.sqf";
+  [_owner, maxDisReq, _lockToOwner, _num, casType,"CAS_TARGET",_id] execVM "scripts\client\CAS\CAS.sqf";
 };

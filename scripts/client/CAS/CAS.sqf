@@ -25,7 +25,7 @@ _ranPos = [(_loc select 0) + _dis * sin _dir, (_loc select 1) + _dis * cos _dir,
 
 _grp = createGroup west;
 _buzz = createVehicle ["B_Plane_CAS_01_F", _ranPos, [], 0, "FLY"];
-[_buzz] execVM "common\client\CAS\track.sqf";
+[_buzz] execVM "scripts\client\CAS\track.sqf";
 _buzz setVectorDir [(_loc select 0)-(getPos _buzz select 0),(_loc select 1)-(getPos _buzz select 1),0];
 sleep 1;
 _dir = getDir _buzz;
@@ -96,7 +96,7 @@ _object removeAction _id;
 if (usedCAS < usedCAS) then
 {
   _num = _num - usedCAS;
-  [_object, _distance, _doLock, _num] execVM "common\client\CAS\addAction.sqf"
+  [_object, _distance, _doLock, _num] execVM "scripts\client\CAS\addAction.sqf"
 };
 
 
@@ -260,5 +260,5 @@ waitUntil{_buzz distance _object >= 2000 || !alive _buzz};
   deleteVehicle vehicle _x;
   deleteVehicle _x;
   sleep 600;
-  [_object, _distance, _doLock, _num] execVM "common\client\CAS\addAction.sqf"
+  [_object, _distance, _doLock, _num] execVM "scripts\client\CAS\addAction.sqf"
 } forEach units _grp;

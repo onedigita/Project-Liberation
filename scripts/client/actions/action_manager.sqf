@@ -1,8 +1,7 @@
 
-private [ "_idact_build",  "_idact_arsenal", "_idact_buildfob", "_idact_redeploy", "_idact_tutorial", "_distfob", "_distarsenal",  "_distbuildfob", "_distspawn", "_distredeploy", "_idact_commander" ];
+private [ "_idact_build", "_idact_buildfob", "_idact_redeploy", "_idact_tutorial", "_distfob", "_distarsenal",  "_distbuildfob", "_distspawn", "_distredeploy", "_idact_commander" ];
 
 _idact_build = -1;
-_idact_arsenal = -1;
 _idact_buildfob = -1;
 _idact_redeploy = -1;
 _idact_tutorial = -1;
@@ -79,8 +78,9 @@ while { true } do {
 			player removeAction _idact_redeploy;
 			_idact_redeploy = -1;
 		};
-
 	};
+
+
 
 	if ( _fobdistance < _distfob && alive player && vehicle player == player && ( (  [ player, 3 ] call F_fetchPermission ) || ( player == ( [] call F_getCommander ) || [] call F_isAdmin ) ) ) then {
 		if ( _idact_build == -1 ) then {
