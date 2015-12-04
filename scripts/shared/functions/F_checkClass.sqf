@@ -1,2 +1,2 @@
-params [ "_classtotest" ];
+params ["_classtotest"];
 isClass ( configFile / 'cfgVehicles' / _classtotest );
