@@ -2,14 +2,13 @@
 enableSentences false;
 player disableConversation true;
 player setSpeaker "NoVoice";
-showSubtitles false;
-enableSentences false;
-enableRadio false;
-player disableConversation true;
 
-if(player == CAS1) then {
-		null = [CAS1, 700, true, -1] execVM "scripts\client\CAS\addAction.sqf";} else {};
-	
+showSubtitles false;
+enableRadio false;
+
+if(player == P4) then {
+	[P4, 700, true, -1] execVM "scripts\client\CAS\addAction.sqf";
+};
 
 if ( isNil "GRLIB_respawn_loadout" ) then {
 	removeAllWeapons player;
