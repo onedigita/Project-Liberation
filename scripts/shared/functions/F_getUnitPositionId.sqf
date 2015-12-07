@@ -1,9 +1,7 @@
 params [ "_unit" ];
-private ["_vvn", "_str"];
 
-_vvn = vehicleVarName _unit;
-_unit setVehicleVarName "";
-_str = str _unit;
+private _vvn = vehicleVarName _unit;
+_unit setVehicleVarName "";// TODO: is this necessary to be using setVehicleVarName twice? is this a workaround?
 _unit setVehicleVarName _vvn;
 
-parseNumber (_str select [(_str find ":") + 1])
+parseNumber ((str _unit) select [((str _unit) find ":") + 1])

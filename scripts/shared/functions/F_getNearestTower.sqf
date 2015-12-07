@@ -1,8 +1,7 @@
 params [ "_postosearch", "_side", "_limit" ];
-private [ "_sector_to_return", "_sectors_to_search", "_sectors_to_search_sorted"];
 
-_sector_to_return = '';
-_sectors_to_search = [];
+private _sector_to_return = '';
+private _sectors_to_search = [];
 if ( _side == EAST ) then {
 	_sectors_to_search = (sectors_tower - blufor_sectors);
 } else {
@@ -11,7 +10,7 @@ if ( _side == EAST ) then {
 
 _sectors_to_search = [ _sectors_to_search , { (markerPos _x) distance _postosearch < _limit } ] call BIS_fnc_conditionalSelect;
 
-_sectors_to_search_sorted = [ _sectors_to_search , [_postosearch] , { (markerPos _x) distance _input0 } , 'ASCEND' ] call BIS_fnc_sortBy;
+private _sectors_to_search_sorted = [ _sectors_to_search , [_postosearch] , { (markerPos _x) distance _input0 } , 'ASCEND' ] call BIS_fnc_sortBy;
 if ( count _sectors_to_search_sorted > 0 ) then { _sector_to_return = _sectors_to_search_sorted select 0; } else { _sector_to_return = '' };
 
 _sector_to_return;

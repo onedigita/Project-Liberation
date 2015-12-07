@@ -1,9 +1,8 @@
 params [ "_startpos" ];
-private [ "_currentnearest", "_refdistance", "_tpositions"];
 
-_currentnearest = [];
-_refdistance = 99999;
-_tpositions = [];
+private _currentnearest = [];
+private _refdistance = 99999;
+private _tpositions = [];
 
 if ( count GRLIB_all_fobs != 0 || count blufor_sectors != 0 ) then {
 
